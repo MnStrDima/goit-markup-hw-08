@@ -278,6 +278,10 @@ body {
   margin: -1px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .page-header {
   position: fixed;
   top: 0;
