@@ -1,18 +1,30 @@
 .modal {
-  position: absolute;
+  position: relative;
   display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  margin: 94px 15px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
   text-align: center;
   background-color: #ffffff;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+
+  @media screen and (min-width: $tablet) {
+    margin: 208px 159px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    height: 581px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -107,12 +119,12 @@
 }
 
 .icon-modal {
-  display: inline-block;
-  width: 18px;
-  height: 18px;
   position: absolute;
   top: 50%;
   left: 16px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   transform: translateY(-50%);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

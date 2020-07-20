@@ -1,9 +1,8 @@
 body {
   @extend %body-fontstyle;
-}
-
-body.modal-open {
-  overflow: hidden;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 img {

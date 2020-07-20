@@ -1,28 +1,30 @@
 .header-nav {
-  display: flex;
+  // display: flex;
   align-items: center;
 }
 
 .site-navigation {
   list-style-type: none;
-  margin-left: 85px;
+  text-align: center;
+  // margin-left: 85px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  display: flex;
+  // display: flex;
 
   .item:not(:first-child) {
-    margin-left: 50px;
+    margin-top: 40px;
   }
 
   .link {
     position: relative;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    padding-bottom: 8px;
+    display: inline-block;
+    font-size: $font-size-description;
     font-weight: $font-weight-semi-bold;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $links-color;

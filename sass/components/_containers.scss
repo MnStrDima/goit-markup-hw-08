@@ -2,19 +2,42 @@
   @extend %container;
 
   &.header {
+    background-color: $bg-color;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+    padding-top: 10px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    // text-align: center;
   }
 
   &.features {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
   }
 
   &.for-footer {
-    display: flex;
-    align-items: baseline;
+    padding: 60px 15px;
+
+    @media screen and (min-width: $mobile) {
+      width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+      width: $tablet;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: $desktop;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
 }
