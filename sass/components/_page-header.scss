@@ -1,8 +1,6 @@
 .page-header {
   position: relative;
-  // top: 0;
-  // left: 0;
-  // z-index: 10;
+  height: 60px;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
