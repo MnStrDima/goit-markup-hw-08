@@ -15,51 +15,55 @@
     <header class="page-header">
       <div class="container header">
         <a class="logo" href="./index.html">
-            Web
-            <span class="in-header">Studio</span>
-          </a>
-          <button data-menu-button type="button" class="menu-button" aria-expanded="false" aria-controls="header-menu">
-    <svg width="20" height="20" aria-label="Переключатель мобильного меню">
-      <use class="menu-icon-close" href="./images/sprite.svg#icon-mobile-menu-close"></use>
-      <use class="menu-icon" href="./images/sprite.svg#icon-mobile-menu"></use> 
-    </svg>
-    </button>
+          Web
+          <span class="in-header">Studio</span>
+        </a>
+        <button
+          data-menu-button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <svg width="20" height="20" aria-label="Переключатель мобильного меню">
+            <use class="menu-icon-close" href="./images/sprite.svg#icon-mobile-menu-close"></use>
+            <use class="menu-icon" href="./images/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
         <div data-menu class="header-menu" id="header-menu">
           <nav class="header-nav">
-          <ul class="site-navigation">
-            <li class="item">
-              <a href="./index.html" class="link current" aria-current="page"
-                >Студия</a
-              >
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item">
-              <a href="" class="link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="header-address">
-          <ul class="site-contacts">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="header-icon" width="16" height="11">
-                  <use href="./images/sprite.svg#icon-mail-icon"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link">
-                <svg class="header-icon" width="10" height="15">
-                  <use href="./images/sprite.svg#icon-phone-icon"></use>
-                </svg>
-                +380961111111
-              </a>
-            </li>
-          </ul>
-        </address>
+            <ul class="site-navigation">
+              <li class="item">
+                <a href="./index.html" class="link current" aria-current="page">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item">
+                <a href="" class="link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-address">
+            <ul class="site-contacts">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link">
+                  <svg class="header-icon" width="16" height="11">
+                    <use href="./images/sprite.svg#icon-mail-icon"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link">
+                  <svg class="header-icon" width="10" height="15">
+                    <use href="./images/sprite.svg#icon-phone-icon"></use>
+                  </svg>
+                  +380961111111
+                </a>
+              </li>
+            </ul>
+          </address>
         </div>
       </div>
     </header>
@@ -86,8 +90,7 @@
               </div>
               <h3 class="section-subtitle">Внимание к деталям</h3>
               <p class="features">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="item">
@@ -98,8 +101,7 @@
               </div>
               <h3 class="section-subtitle">Пунктуальность</h3>
               <p class="features">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="item">
@@ -110,8 +112,7 @@
               </div>
               <h3 class="section-subtitle">Планирование</h3>
               <p class="features">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
+                Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="item">
@@ -122,8 +123,7 @@
               </div>
               <h3 class="section-subtitle">Современные технологии</h3>
               <p class="features">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
@@ -135,30 +135,69 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="section-list">
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/box1-370.jpg"
-                alt="коробка1"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box1-370.webp 370w, ./images/box1-370@2x.webp 740w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/box1-370.jpg 370w, ./images/box1-370@2x.jpg 740w"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="work-img"
+                  src="./images/box1-370.jpg"
+                  alt="Десктопные приложения"
+                  sizes="(min-width: 1200px) 30vw"
+                />
+              </picture>
+
               <h3 class="section-subtitle work">Десктопные приложения</h3>
             </li>
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/box2-370.jpg"
-                alt="коробка2"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box2-370.webp 370w, ./images/box2-370@2x.webp 740w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/box2-370.jpg 370w, ./images/box2-370@2x.jpg 740w"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="work-img"
+                  src="./images/box2-370.jpg"
+                  alt="Мобильные приложения"
+                  sizes="(min-width: 1200px) 30vw"
+                />
+              </picture>
+
               <h3 class="section-subtitle work">Мобильные приложения</h3>
             </li>
             <li class="work-item">
-              <img
-                class="work-img"
-                src="./images/box3-370.jpg"
-                alt="коробка3"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box3-370.webp 370w, ./images/box3-370@2x.webp 740w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/box3-370.jpg 370w, ./images/box3-370@2x.jpg 740w"
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="work-img"
+                  src="./images/box3-370.jpg"
+                  alt="Дизайнерские решения"
+                  sizes="(min-width: 1200px) 30vw"
+                />
+              </picture>
+
               <h3 class="section-subtitle work">Дизайнерские решения</h3>
             </li>
           </ul>
@@ -170,12 +209,44 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="section-list">
             <li class="teams item">
-              <img
-                class="mate-img"
-                src="./images/mate1-270.jpg"
-                alt="Николай Кучеренко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate1-270.webp 270w, ./images/mate1-270@2x.webp 540w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mate1-270.jpg 270w, ./images/mate1-270@2x.jpg 540w"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate1-354.webp 354w, ./images/mate1-354@2x.webp 708w"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mate1-354.jpg 354w, ./images/mate1-354@2x.jpg 708w"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mate1-450.webp 450w, ./images/mate1-450@2x.webp 900w"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mate1-450.jpg 450w, ./images/mate1-450@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="mate-img"
+                  src="./images/mate1-270.jpg "
+                  alt="Николай Кучеренко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 80vw"
+                />
+              </picture>
               <h3 class="section-subtitle team">Николай Кучеренко</h3>
               <p class="position">Product Designer</p>
               <ul class="mate">
@@ -210,12 +281,44 @@
               </ul>
             </li>
             <li class="teams item">
-              <img
-                class="mate-img"
-                src="./images/mate2-270.jpg"
-                alt="Ольга Иванова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate2-270.webp 270w, ./images/mate2-270@2x.webp 540w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mate2-270.jpg 270w, ./images/mate2-270@2x.jpg 540w"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate2-354.webp 354w, ./images/mate2-354@2x.webp 708w"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mate2-354.jpg 354w, ./images/mate2-354@2x.jpg 708w"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mate2-450.webp 450w, ./images/mate2-450@2x.webp 900w"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mate2-450.jpg 450w, ./images/mate2-450@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="mate-img"
+                  src="./images/mate2-270.jpg "
+                  alt="Ольга Иванова"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 80vw"
+                />
+              </picture>
               <h3 class="section-subtitle team">Ольга Иванова</h3>
               <p class="position">Frontend Developer</p>
               <ul class="mate">
@@ -250,12 +353,44 @@
               </ul>
             </li>
             <li class="teams item">
-              <img
-                class="mate-img"
-                src="./images/mate3-270.jpg"
-                alt="Андрей Шевченко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate3-270.webp 270w, ./images/mate3-270@2x.webp 540w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mate3-270.jpg 270w, ./images/mate3-270@2x.jpg 540w"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate3-354.webp 354w, ./images/mate3-354@2x.webp 708w"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mate3-354.jpg 354w, ./images/mate3-354@2x.jpg 708w"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mate3-450.webp 450w, ./images/mate3-450@2x.webp 900w"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mate3-450.jpg 450w, ./images/mate3-450@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="mate-img"
+                  src="./images/mate3-270.jpg "
+                  alt="Андрей Шевченко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 80vw"
+                />
+              </picture>
               <h3 class="section-subtitle team">Андрей Шевченко</h3>
               <p class="position">Marketing</p>
               <ul class="mate">
@@ -290,12 +425,44 @@
               </ul>
             </li>
             <li class="teams item">
-              <img
-                class="mate-img"
-                src="./images/mate4-270.jpg"
-                alt="Иван Николаев"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/mate4-270.webp 270w, ./images/mate4-270@2x.webp 540w"
+                  type="image/webp"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mate4-270.jpg 270w, ./images/mate4-270@2x.jpg 540w"
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="./images/mate4-354.webp 354w, ./images/mate4-354@2x.webp 708w"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mate4-354.jpg 354w, ./images/mate4-354@2x.jpg 708w"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/mate4-450.webp 450w, ./images/mate4-450@2x.webp 900w"
+                  type="image/webp"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mate4-450.jpg 450w, ./images/mate4-450@2x.jpg 900w"
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="mate-img"
+                  src="./images/mate4-270.jpg "
+                  alt="Иван Николаев"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 80vw"
+                />
+              </picture>
               <h3 class="section-subtitle team">Иван Николаев</h3>
               <p class="position">UI Designer</p>
               <ul class="mate">
@@ -328,6 +495,8 @@
                   </a>
                 </li>
               </ul>
+            </li>
+          </ul>
         </div>
       </section>
       <!--Постоянные клиенты-->
@@ -338,43 +507,43 @@
             <li class="item">
               <a class="link" href="">
                 <svg class="clients-icon" width="44" height="50">
-                      <use href="./images/sprite.svg#icon-client1"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-client1"></use>
+                </svg>
               </a>
             </li>
             <li class="item">
               <a class="link" href="">
                 <svg class="clients-icon" width="40" height="52">
-                      <use href="./images/sprite.svg#icon-client2"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-client2"></use>
+                </svg>
               </a>
             </li>
             <li class="item">
               <a class="link" href="">
                 <svg class="clients-icon" width="41" height="43">
-                      <use href="./images/sprite.svg#icon-client3"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-client3"></use>
+                </svg>
               </a>
             </li>
             <li class="item">
               <a class="link" href="">
                 <svg class="clients-icon" width="80" height="42">
-                      <use href="./images/sprite.svg#icon-client4"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-client4"></use>
+                </svg>
               </a>
             </li>
             <li class="item">
               <a class="link" href="">
                 <svg class="clients-icon" width="59" height="47">
-                      <use href="./images/sprite.svg#icon-client5"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-client5"></use>
+                </svg>
               </a>
             </li>
             <li class="item">
               <a class="link" href="">
                 <svg class="clients-icon" width="88" height="45">
-                      <use href="./images/sprite.svg#icon-client6"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-client6"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -382,70 +551,67 @@
       </section>
 
       <div data-modal class="backdrop is-hidden">
-<div class="modal">
-  <button data-modal-close type="button" class="button-close">
-    <svg class="icon-close" width="18" height="18">
-      <use href="./images/sprite.svg#icon-modal-close"></use> 
-    </svg>
-    </button>
-  <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
-<form class="form">
-  <ul class="form-list">
-    <li class="form-item">
-      <label class="form-field">
-  <input type="text" class="form-input" name="name" placeholder=" ">
-<span class="form-label">Имя</span>
-<span class="icon-modal">
-  <svg class="modal-svg" width="18" height="18">
-    <use href="./images/sprite.svg#icon-modal-name"></use> 
-  </svg>
-</span>
-</label>
-    </li>
-    <li class="form-item">
-      <label class="form-field">
-  <input type="tel" class="form-input" name="name" placeholder=" ">
-<span class="form-label">Телефон</span>
-<span class="icon-modal">
-  <svg class="modal-svg" width="18" height="18">
-    <use href="./images/sprite.svg#icon-modal-phone"></use> 
-  </svg>
-</span>
-</label>
-    </li>
-    <li class="form-item">
-      <label class="form-field">
-  <input type="email" class="form-input" name="name" placeholder=" ">
-<span class="form-label">Почта</span>
-<span class="icon-modal">
-  <svg class="modal-svg" width="18" height="18">
-    <use href="./images/sprite.svg#icon-modal-mail"></use> 
-  </svg>
-</span>
-</label>
-    </li>
-    <li class="form-item">
-      <label class="form-field">
-  <textarea class="comment-input"
-  name="comment"
-  placeholder=" "
-></textarea>
-<span class="comment-label" >Комментарий</span>
-</label>
-    </li>
-  </ul>
-<label class="checkbox-label">
-<input type="checkbox" class="checkbox" name="privacy">
-<span class="checkbox-icon"></span>
-<span class="label-text">
-  Соглашаюсь с рассылкой и принимаю 
-  <a class="checkbox-link" href=""> Условия договора</a>
-</span>
-</label>
+        <div class="modal">
+          <button data-modal-close type="button" class="button-close">
+            <svg class="icon-close" width="18" height="18">
+              <use href="./images/sprite.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <span class="modal-title">Оставьте свои данные, мы вам перезвоним</span>
+          <form class="form">
+            <ul class="form-list">
+              <li class="form-item">
+                <label class="form-field">
+                  <input type="text" class="form-input" name="name" placeholder=" " />
+                  <span class="form-label">Имя</span>
+                  <span class="icon-modal">
+                    <svg class="modal-svg" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-modal-name"></use>
+                    </svg>
+                  </span>
+                </label>
+              </li>
+              <li class="form-item">
+                <label class="form-field">
+                  <input type="tel" class="form-input" name="name" placeholder=" " />
+                  <span class="form-label">Телефон</span>
+                  <span class="icon-modal">
+                    <svg class="modal-svg" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-modal-phone"></use>
+                    </svg>
+                  </span>
+                </label>
+              </li>
+              <li class="form-item">
+                <label class="form-field">
+                  <input type="email" class="form-input" name="name" placeholder=" " />
+                  <span class="form-label">Почта</span>
+                  <span class="icon-modal">
+                    <svg class="modal-svg" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-modal-mail"></use>
+                    </svg>
+                  </span>
+                </label>
+              </li>
+              <li class="form-item">
+                <label class="form-field">
+                  <textarea class="comment-input" name="comment" placeholder=" "></textarea>
+                  <span class="comment-label">Комментарий</span>
+                </label>
+              </li>
+            </ul>
+            <label class="checkbox-label">
+              <input type="checkbox" class="checkbox" name="privacy" />
+              <span class="checkbox-icon"></span>
+              <span class="label-text">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox-link" href=""> Условия договора</a>
+              </span>
+            </label>
 
-  <button class="button-primary">Отправить</button>
-</form>
-</div>
+            <button class="button-primary">Отправить</button>
+          </form>
+        </div>
       </div>
     </main>
     <!-- Подвал страницы -->
@@ -464,9 +630,7 @@
                 </a>
               </li>
               <li class="address-item">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com
-                </a>
+                <a class="link" href="mailto:info@devstudio.com">info@devstudio.com </a>
               </li>
               <li class="address-item">
                 <a class="link" href="tel:+380961111111">+38 096 111 11 11 </a>
@@ -480,29 +644,29 @@
             <li class="social-item">
               <a class="social-links" href="https://www.instagram.com/">
                 <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-instagram"></use>
-                    </svg>
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-links" href="https://twitter.com/">
-              <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-twitter"></use>
-                    </svg>
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-links" href="https://www.facebook.com/">
-              <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-facebook"></use>
-                    </svg>
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-links" href="https://www.linkedin.com/">
-              <svg class="social-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-linkedin"></use>
-                    </svg>
+                <svg class="social-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -511,14 +675,15 @@
           <span class="footer-text"><b>Подпишитесь на рассылку</b></span>
           <form class="footer-form">
             <label class="footer-form-field">
-  <input type="email" class="footer-form-input" name="name" placeholder="Email">
-<!-- <span class="footer-form-label">Email</span> -->
-</label>
-            <button type="submit" class="button-primary">Подписаться
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/sprite.svg#icon-subscribe"></use>
-            </svg>
-          </button>
+              <input type="email" class="footer-form-input" name="name" placeholder="Email" />
+              <!-- <span class="footer-form-label">Email</span> -->
+            </label>
+            <button type="submit" class="button-primary">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-subscribe"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

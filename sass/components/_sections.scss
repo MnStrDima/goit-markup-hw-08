@@ -7,7 +7,7 @@
     padding-bottom: 94px;
   }
 
-  .team-section {
+  &.team-section {
     background: $team-bg-color;
   }
 
@@ -80,8 +80,9 @@
 .section-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  margin: -15px;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -96,10 +97,13 @@
   }
 
   & .item {
-    width: 450px;
     text-align: start;
     display: block;
     margin: 15px;
+
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+    }
 
     @media screen and (min-width: $tablet) {
       width: calc((100% - 4 * 15px) / 2);
@@ -253,7 +257,6 @@
 }
 
 .teams.item {
-  width: 450px;
   display: block;
   padding-bottom: 24px;
   text-align: center;
@@ -264,12 +267,16 @@
   border-radius: 0px 0px 4px 4px;
   margin: 15px;
 
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
   @media screen and (min-width: $tablet) {
     width: calc((100% - 4 * 15px) / 2);
   }
 
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 12 * 15px) / 4);
+    width: calc((100% - 8 * 15px) / 4);
   }
 }
 
@@ -295,9 +302,19 @@
   display: block;
   width: 450px;
   height: 120px;
-  padding: 25px 190px;
   background: $team-bg-color;
   border-radius: 4px;
+
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $mobile) {
+    padding: 25px 190px;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 354px;
