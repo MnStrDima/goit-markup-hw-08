@@ -1788,6 +1788,13 @@ footer {
 
 .label-text {
   color: #757575;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .label-text {
+    font-size: 14px;
+  }
 }
 
 .checkbox-link {

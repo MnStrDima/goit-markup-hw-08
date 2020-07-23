@@ -184,6 +184,11 @@
 
 .label-text {
   color: $font-color;
+  font-size: $font-size-small;
+
+  @media screen and (min-width: $desktop) {
+    font-size: $font-size-main;
+  }
 }
 
 .checkbox-link {
