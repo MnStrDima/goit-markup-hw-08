@@ -20,9 +20,9 @@
 
   @media screen and (min-width: 481px) {
     position: absolute;
-    top: 50vw;
-    left: 50%;
-    transform: translate(-50%, -50vw) scale(1);
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50vw, -50vh) scale(1);
   }
 
   @media screen and (min-width: $tablet) {
