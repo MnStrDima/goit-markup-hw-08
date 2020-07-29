@@ -20,7 +20,7 @@
 }
 
 .header-address {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
 
@@ -45,7 +45,7 @@
   }
 
   & .item:not(:first-child) {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
       margin-top: 16px;
     }
 
@@ -71,7 +71,7 @@
     color: $font-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: 767px) {
       justify-content: center;
     }
 
@@ -138,7 +138,7 @@
 }
 
 .header-menu {
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     position: absolute;
     z-index: 100;
     background-color: $bg-color;

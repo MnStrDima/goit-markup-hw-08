@@ -14,22 +14,41 @@
 
   @media screen and (max-width: $mobile) {
     top: 50vw;
-    transform: translate(0, -25%) scale(1);
+    transform: translate(0, -50vw) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  @media screen and (min-width: 481px) {
-    position: absolute;
-    top: 50vw;
-    left: 50%;
-    transform: translate(-50%, -50vw) scale(1);
-  }
-
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 481px) and (max-width: 767px) {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    position: absolute;
+    top: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50vw) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 528px;
+    min-height: 581px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) and (orientation: landscape) {
+    position: absolute;
+    top: 50vw;
+    left: 50%;
+    transform: translate(-50%, -50vh) scale(1);
     max-width: 528px;
     min-height: 581px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,9 +66,26 @@
 }
 
 .backdrop.is-hidden .modal {
-  @media screen and (max-width: $tablet-upper) {
-    transform: translate(0, -50%) scale(1.5);
+  @media screen and (max-width: $mobile) {
+    transform: translate(0, -50vw) scale(1.5);
   }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+    transform: translate(-50%, -50vw) scale(1.5);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) and (orientation: landscape) {
+    transform: translate(-50%, -50vh) scale(1.5);
+  }
+
   @media screen and (min-width: $desktop) {
     transform: translate(-50%, -50%) scale(1.5);
   }
