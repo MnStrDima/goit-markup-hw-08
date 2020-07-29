@@ -47,8 +47,8 @@
 }
 
 .backdrop.is-hidden .modal {
-  @media screen and (max-width: $tablet-upper) {
-    transform: translate(0, -50%) scale(1.5);
+  @media screen and (max-width: $mobile) {
+    transform: translate(0, -50vh) scale(1.5);
   }
   @media screen and (min-width: $desktop) {
     transform: translate(-50%, -50%) scale(1.5);
