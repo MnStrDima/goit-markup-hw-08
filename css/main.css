@@ -1627,10 +1627,10 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .modal {
     position: absolute;
-    top: 50vh;
-    left: 50vw;
-    -webkit-transform: translate(-50vw, -50vh) scale(1);
-            transform: translate(-50vw, -50vh) scale(1);
+    top: 50vw;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
     max-width: 528px;
     min-height: 581px;
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1645,8 +1645,8 @@ footer {
     position: absolute;
     top: 50vw;
     left: 50%;
-    -webkit-transform: translate(-50%, -50vh) scale(1);
-            transform: translate(-50%, -50vh) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
     max-width: 528px;
     min-height: 581px;
     -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1702,8 +1702,8 @@ footer {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
   .backdrop.is-hidden .modal {
-    -webkit-transform: translate(-50%, -50vh) scale(1.5);
-            transform: translate(-50%, -50vh) scale(1.5);
+    -webkit-transform: translate(-50%, -50%) scale(1.5);
+            transform: translate(-50%, -50%) scale(1.5);
   }
 }
 
