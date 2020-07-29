@@ -27,9 +27,9 @@
 
   @media screen and (min-width: $tablet) {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50vw, -50vh) scale(1);
     max-width: 528px;
     min-height: 581px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
